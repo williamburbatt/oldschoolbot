@@ -1,4 +1,5 @@
 import { Activity, Tasks } from '../constants';
+import { TeamMember } from 'oldschooljs/dist/simulation/minigames/ChambersOfXeric';
 
 export interface ActivityTaskOptions {
 	type: Activity;
@@ -18,6 +19,14 @@ export interface MonsterActivityTaskOptions extends ActivityTaskOptions {
 	monsterID: number;
 	channelID: string;
 	quantity: number;
+}
+
+export interface RaidsActivityTaskOptions extends ActivityTaskOptions {
+	channelID: string;
+	quantity: number;
+	partyLeaderID: string;
+	team: TeamMember[];
+	challengeMode: boolean;
 }
 
 export interface ClueActivityTaskOptions extends ActivityTaskOptions {
@@ -63,6 +72,10 @@ export interface MonsterKillingTickerTaskData {
 	subTasks: MonsterActivityTaskOptions[];
 }
 
+export interface MinigameTickerTaskData {
+	subTasks: RaidsActivityTaskOptions[];
+}
+
 export interface ClueTickerTaskData {
 	subTasks: ClueActivityTaskOptions[];
 }
@@ -74,7 +87,8 @@ export interface SkillingTickerTaskData {
 export type TickerTaskData =
 	| MonsterKillingTickerTaskData
 	| ClueTickerTaskData
-	| SkillingTickerTaskData;
+	| SkillingTickerTaskData
+	| MinigameTickerTaskData;
 
 export type MinionActivityTask =
 	| Tasks.AgilityActivity
@@ -85,4 +99,5 @@ export type MinionActivityTask =
 	| Tasks.SmithingActivity
 	| Tasks.WoodcuttingActivity
 	| Tasks.FiremakingActivity
-	| Tasks.QuestingActivity;
+	| Tasks.QuestingActivity
+	| Tasks.RaidsActivity;
