@@ -36,6 +36,7 @@ import Skills from '../lib/skills';
 import getUsersPerkTier from '../lib/util/getUsersPerkTier';
 import Fishing from '../lib/skills/fishing';
 import Agility from '../lib/skills/agility';
+import { sumOfSetupStats } from '../lib/gear/functions/sumOfSetupStats';
 
 export default class extends Extendable {
 	public constructor(store: ExtendableStore, file: string[], directory: string) {
@@ -280,6 +281,29 @@ export default class extends Extendable {
 
 	public get hasMinion(this: User) {
 		return this.settings.get(UserSettings.Minion.HasBought);
+	}
+
+	public getMinigameKC(this: User, minigameID: number) {
+		const score = this.settings.get(UserSettings.MinigameScores)[minigameID];
+		return score ?? 0;
+	}
+
+	public getCombatGear(this: User) {
+		const meleeGear = this.settings.get(UserSettings.Gear.Melee);
+		const mageGear = this.settings.get(UserSettings.Gear.Mage);
+		const rangeGear = this.settings.get(UserSettings.Gear.Range);
+
+		return { meleeGear, mageGear, rangeGear };
+	}
+
+	public getCombatGearStats(this: User) {
+		const { meleeGear, mageGear, rangeGear } = this.getCombatGear();
+
+		return {
+			meleeGearStats: sumOfSetupStats(meleeGear),
+			mageGearStats: sumOfSetupStats(mageGear),
+			rangeGearStats: sumOfSetupStats(rangeGear)
+		};
 	}
 
 	public get maxTripLength(this: User) {

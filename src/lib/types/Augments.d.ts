@@ -7,6 +7,7 @@ import { Image } from 'canvas';
 
 import { CustomGet } from '../UserSettings';
 import { Bank, SkillsEnum } from '.';
+import { GearSetup, GearStats } from '../gear/types';
 
 declare module 'klasa' {
 	interface KlasaClient {
@@ -79,6 +80,13 @@ declare module 'discord.js' {
 		skillLevel(skillName: SkillsEnum): number;
 		incrementMinionDailyDuration(duration: number): Promise<SettingsUpdateResult>;
 		toggleBusy(busy: boolean): void;
+		getMinigameKC(minigameID: number): number;
+		getCombatGear(): { meleeGear: GearSetup; rangeGear: GearSetup; mageGear: GearSetup };
+		getCombatGearStats(): {
+			meleeGearStats: GearStats;
+			rangeGearStats: GearStats;
+			mageGearStats: GearStats;
+		};
 		sanitizedName: string;
 		badges: string;
 		/**
