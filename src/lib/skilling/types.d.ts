@@ -6,7 +6,8 @@ export const enum SkillsEnum {
 	Smithing = 'smithing',
 	Woodcutting = 'woodcutting',
 	Firemaking = 'firemaking',
-	Runecraft = 'runecraft'
+	Runecraft = 'runecraft',
+	Thieving = 'thieving'
 }
 
 export interface Ore {
@@ -90,4 +91,12 @@ export interface Cookable {
 	stopBurnAt: number;
 	stopBurnAtCG: number;
 	burntCookable: number;
+}
+
+export interface Thievable {
+	name: string;
+	level: number;
+	xp: number;
+	petChance: number;
+	aliases: string[];
 }

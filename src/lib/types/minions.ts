@@ -77,6 +77,13 @@ export interface SkillingTickerTaskData {
 	subTasks: ActivityTaskOptions[];
 }
 
+
+export interface ThievingActivityTaskOptions extends ActivityTaskOptions {
+	thievingID: string;
+	channelID: string;
+	quantity: number;
+}
+
 export type TickerTaskData =
 	| MonsterKillingTickerTaskData
 	| ClueTickerTaskData
