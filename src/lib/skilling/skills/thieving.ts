@@ -78,6 +78,83 @@ const Thievable: Thievable[] = [
 		level: 45,
 		xp: 65,
 		petChance: 34_440
+    },
+    {
+		name: 'Bearded Pollnivnian Bandit',
+		aliases: ['bearded pollnivnian bandit'],
+		level: 45,
+		xp: 65,
+		petChance: 35_609
+    },
+    {
+		name: 'Desert Bandit',
+		aliases: ['desert bandit'],
+		level: 53,
+		xp: 79.5,
+		petChance: 35_609
+	},
+	{
+		name: 'Knight of Ardougne',
+		aliases: ['knight of ardougne'],
+		level: 55,
+		xp: 84.3,
+		petChance: 33_005
+	},
+	{
+		name: 'Pollnivian Bandit',
+        aliases: ['Pollnivian Bandit'],
+		level: 55,
+        xp: 84.3,
+		petChance: 26_648
+	},
+	{
+		name: 'Yanille Watchman',
+        aliases: ['yanille watchman'],
+		level: 65,
+		xp: 137.5,
+		petChance: 26_648
+	},
+	{
+		name: 'Menaphite Thug',
+		aliases: ['menaphite thug'],
+		level: 65,
+		xp: 137.5,
+		petChance: 36_842
+	},
+	{
+		name: 'Paladin',
+		aliases: ['paladin'],
+		level: 70,
+		xp: 151.7,
+		petChance: 26_806
+	},
+	{
+		name: `Gnome`,
+		aliases: ['gnome'],
+		level: 75,
+		xp: 198.5,
+		petChance: 35_205
+	},
+	{
+		name: 'Hero',
+		aliases: ['hero'],
+		level: 80,
+		xp: 275,
+		petChance: 33_422
+	},
+	{
+		name: 'Elf',
+		aliases: ['elf'],
+		level: 85,
+		xp: 353,
+		petChance: 31_063
+	},
+	{
+		name: 'TzHaar-Hur',
+		aliases: ['tzHaar-hur'],
+		level: 90,
+		xp: 103.4,
+		petChance: 34_440
 	}
 ];
 
