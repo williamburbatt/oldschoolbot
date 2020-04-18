@@ -13,8 +13,39 @@ import { SkillsEnum } from '../../lib/skilling/types';
 export default class extends Task {
 	async run({ thievingID, quantity, userID, channelID }: ThievingActivityTaskOptions) {
 		const user = await this.client.users.fetch(userID);
-		const currentLevel = user.skillLevel(SkillsEnum.Agility);
-    }
+		//const currentLevel = user.skillLevel(SkillsEnum.Agility);
+    
+        //testing with man
+        let maxTicks= 1800;
+        let stunTime = 5;
+        let respawnTime = 1;
+        let failChance = 30;
+        let failed = 0;
+        let success = 0;
+        let xp = 8;
+
+        //Need to calculate success rate based on level.
+
+
+
+        //calculates successful and failed attempts.
+        while (maxTicks > respawnTime) {
+			if (rand(1, 100) < failChance){
+                maxTicks -= stunTime;
+                failed++;
+            }
+            else{
+                maxTicks -= respawnTime;
+                success++;
+            }
+        }
+
+        let xpGained = xp*success;
+        
+
+        
+}
+
 	// 	const thievable = Agility.Courses.find(thiveable => thievable.name === thievingID);
 
 	// 	if (!course) return;

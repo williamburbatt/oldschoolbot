@@ -374,7 +374,7 @@ const thievable: Thievable[] = [
 ];
 
 const Thieving = {
-	aliases: ['thieving'],
+	aliases: ['thieving', 'thieve'],
 	Thievable: thievable,
 	id: SkillsEnum.Thieving,
 	emoji: Emoji.Agility
