@@ -1,7 +1,7 @@
 import { Emoji } from '../../constants';
 import { Thievable, SkillsEnum } from '../types';
 
-const Thievable: Thievable[] = [
+const thievable: Thievable[] = [
 	{
 		name: 'Man',
 		aliases: ['man'],
@@ -160,7 +160,7 @@ const Thievable: Thievable[] = [
 
 const Thieving = {
 	aliases: ['thieving'],
-	Thievable: Thievable,
+	Thievable: thievable,
 	id: SkillsEnum.Thieving,
 	emoji: Emoji.Agility
 };
