@@ -8,6 +8,7 @@ const thievable: Thievable[] = [
 		level: 1,
         xp: 8,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
     },
     {
@@ -16,6 +17,7 @@ const thievable: Thievable[] = [
 		level: 1,
         xp: 8,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -24,6 +26,7 @@ const thievable: Thievable[] = [
 		level: 10,
         xp: 14.5,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -32,6 +35,7 @@ const thievable: Thievable[] = [
 		level: 15,
         xp: 18.5,
         stunTime: 4,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -40,6 +44,7 @@ const thievable: Thievable[] = [
 		level: 20,
         xp: 22.5,
         stunTime: 4,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -48,6 +53,7 @@ const thievable: Thievable[] = [
 		level: 25,
         xp: 26,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -56,6 +62,7 @@ const thievable: Thievable[] = [
 		level: 32,
         xp: 35.5,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -64,6 +71,7 @@ const thievable: Thievable[] = [
 		level: 36,
         xp: 40,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -72,6 +80,7 @@ const thievable: Thievable[] = [
 		level: 38,
         xp: 43,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -80,6 +89,7 @@ const thievable: Thievable[] = [
 		level: 40,
         xp: 46.8,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -88,6 +98,7 @@ const thievable: Thievable[] = [
 		level: 45,
         xp: 65,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
     },
     {
@@ -96,6 +107,7 @@ const thievable: Thievable[] = [
 		level: 45,
         xp: 65,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
     },
     {
@@ -104,6 +116,7 @@ const thievable: Thievable[] = [
 		level: 53,
         xp: 79.5,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -112,6 +125,7 @@ const thievable: Thievable[] = [
 		level: 55,
         xp: 84.3,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -120,6 +134,7 @@ const thievable: Thievable[] = [
 		level: 55,
         xp: 84.3,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -128,6 +143,7 @@ const thievable: Thievable[] = [
 		level: 65,
         xp: 137.5,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 134_625
 	},
 	{
@@ -136,6 +152,7 @@ const thievable: Thievable[] = [
 		level: 65,
         xp: 137.5,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 257_211
 	},
 	{
@@ -144,6 +161,7 @@ const thievable: Thievable[] = [
 		level: 70,
         xp: 151.7,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 127_056
 	},
 	{
@@ -152,6 +170,7 @@ const thievable: Thievable[] = [
 		level: 75,
         xp: 198.5,
         stunTime: 6,
+        respawnTime : 1,
 		petChance: 108_718
 	},
 	{
@@ -160,6 +179,7 @@ const thievable: Thievable[] = [
 		level: 80,
         xp: 275,
         stunTime: 6,
+        respawnTime : 1,
 		petChance: 99_175
 	},
 	{
@@ -168,6 +188,7 @@ const thievable: Thievable[] = [
 		level: 85,
         xp: 353,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 99_175
 	},
 	{
@@ -176,6 +197,7 @@ const thievable: Thievable[] = [
 		level: 90,
         xp: 103.4,
         stunTime: 5,
+        respawnTime : 1,
 		petChance: 176_743
 	}
 ];

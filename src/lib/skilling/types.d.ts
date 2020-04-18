@@ -98,6 +98,7 @@ export interface Thievable {
 	level: number;
 	xp: number;
 	stunTime: number;
+	respawnTime: number;
 	petChance: number;
 	aliases: string[];
 }
