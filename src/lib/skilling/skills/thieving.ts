@@ -85,7 +85,7 @@ const thievable: Thievable[] = [
 	},
 	{
 		name: 'Guard',
-		aliases: ['rel', 'rellekka'],
+		aliases: ['guard'],
 		level: 40,
         xp: 46.8,
         stunTime: 5,
