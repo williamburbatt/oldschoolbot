@@ -16,32 +16,61 @@ export default class extends Task {
 		//const currentLevel = user.skillLevel(SkillsEnum.Agility);
     
         //testing with man
-        let maxTicks= 1800;
+        let maxSeconds= 1800;
         let stunTime = 5;
         let respawnTime = 1;
-        let failChance = 30;
-        let failed = 0;
         let success = 0;
         let xp = 8;
-
+        let level = 1;
+        let maxSuccess = 94.1;
+        let baseSuccess = 70.6;
+        let userLevel = 1;
         //Need to calculate success rate based on level.
+
+        let chancePerLevel = (maxSuccess - baseSuccess) / (99 - level);
+        let successRate = baseSuccess + ((userLevel - 1) * chancePerLevel);
 
 
 
         //calculates successful and failed attempts.
-        while (maxTicks > respawnTime) {
-			if (rand(1, 100) < failChance){
-                maxTicks -= stunTime;
-                failed++;
+        while (maxSeconds > respawnTime) {
+			if (rand(1, 100) < successRate){
+                maxSeconds -= stunTime;
             }
             else{
-                maxTicks -= respawnTime;
+                maxSeconds -= respawnTime;
                 success++;
             }
         }
 
+        //calc xp
         let xpGained = xp*success;
         
+
+        
+
+        //calc items gained
+        // 	const loot = {
+	    // 		[markOfGrace]: totalMarks
+        // 	};
+    
+        
+        
+        //calc pet chance
+        // 	// Roll for pet
+        // 	if (
+        // 		course.petChance &&
+        // 		roll((course.petChance - user.skillLevel(SkillsEnum.Agility) * 25) / quantity)
+        // 	) {
+        // 		loot[itemID('Giant squirrel')] = 1;
+        // 		str += `\nYou have a funny feeling you're being followed...`;
+        // 		this.client.emit(
+        // 			Events.ServerNotification,
+        // 			`${Emoji.Agility} **${user.username}'s** minion, ${user.minionName}, just received a Giant squirrel while running ${course.name} laps at level ${currentLevel} Agility!`
+        // 		);
+        // 	}
+
+        // 	await user.addItemsToBank(loot, true);
 
         
 }
@@ -89,24 +118,9 @@ export default class extends Task {
 	// 	}
 
 	// 	const markOfGrace = itemID('Mark of grace');
-	// 	const loot = {
-	// 		[markOfGrace]: totalMarks
-	// 	};
+	
 
-	// 	// Roll for pet
-	// 	if (
-	// 		course.petChance &&
-	// 		roll((course.petChance - user.skillLevel(SkillsEnum.Agility) * 25) / quantity)
-	// 	) {
-	// 		loot[itemID('Giant squirrel')] = 1;
-	// 		str += `\nYou have a funny feeling you're being followed...`;
-	// 		this.client.emit(
-	// 			Events.ServerNotification,
-	// 			`${Emoji.Agility} **${user.username}'s** minion, ${user.minionName}, just received a Giant squirrel while running ${course.name} laps at level ${currentLevel} Agility!`
-	// 		);
-	// 	}
-
-	// 	await user.addItemsToBank(loot, true);
+	
 
 	// 	const channel = this.client.channels.get(channelID);
 	// 	if (!channelIsSendable(channel)) return;
