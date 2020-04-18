@@ -57,20 +57,20 @@ export default class extends Task {
         
         
         //calc pet chance
-        // 	// Roll for pet
-        // 	if (
-        // 		course.petChance &&
-        // 		roll((course.petChance - user.skillLevel(SkillsEnum.Agility) * 25) / quantity)
-        // 	) {
-        // 		loot[itemID('Giant squirrel')] = 1;
-        // 		str += `\nYou have a funny feeling you're being followed...`;
-        // 		this.client.emit(
-        // 			Events.ServerNotification,
-        // 			`${Emoji.Agility} **${user.username}'s** minion, ${user.minionName}, just received a Giant squirrel while running ${course.name} laps at level ${currentLevel} Agility!`
-        // 		);
-        // 	}
+    // 	// Roll for pet
+	// 	if (
+	// 		course.petChance &&
+	// 		roll((course.petChance - user.skillLevel(SkillsEnum.Agility) * 25) / quantity)
+	// 	) {
+	// 		loot[itemID('Giant squirrel')] = 1;
+	// 		str += `\nYou have a funny feeling you're being followed...`;
+	// 		this.client.emit(
+	// 			Events.ServerNotification,
+	// 			`${Emoji.Agility} **${user.username}'s** minion, ${user.minionName}, just received a Giant squirrel while running ${course.name} laps at level ${currentLevel} Agility!`
+	// 		);
+	// 	}
 
-        // 	await user.addItemsToBank(loot, true);
+	// 	await user.addItemsToBank(loot, true);
 
         
 }
