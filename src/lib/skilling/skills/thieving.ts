@@ -31,7 +31,7 @@ const thievable: Thievable[] = [
 	},
 	{
 		name: 'Female H.A.M. Member',
-        aliases: ['female ham memeber','Female ham member','female ham'],
+        aliases: ['female ham memeber'],
 		level: 15,
         xp: 18.5,
         stunTime: 4,
@@ -40,7 +40,7 @@ const thievable: Thievable[] = [
 	},
 	{
 		name: 'Male H.A.M. Member',
-        aliases: ['male ham memeber','Male ham member','male ham'],
+        aliases: ['male ham memeber'],
 		level: 20,
         xp: 22.5,
         stunTime: 4,
@@ -198,7 +198,178 @@ const thievable: Thievable[] = [
         xp: 103.4,
         stunTime: 5,
         respawnTime : 1,
-		petChance: 176_743
+        petChance: 176_743
+    },
+    {
+		name: 'Vegetable Stall',
+		aliases: ['vegetable stall'],
+		level: 2,
+        xp: 10,
+        stunTime: 0,
+        respawnTime : 2,
+		petChance: 206_777
+    },
+    {
+		name: 'Bakery Stall',
+		aliases: ['bakery stall'],
+		level: 5,
+        xp: 16,
+        stunTime: 0,
+        respawnTime : 2,
+		petChance: 124_066
+	},
+	{
+		name: 'Crafting Stall',
+		aliases: ['crafting stall'],
+		level: 5,
+        xp: 16,
+        stunTime: 0,
+        respawnTime : 7,
+		petChance: 47_718
+	},
+	{
+		name: 'Monkey Food Stall',
+        aliases: ['monkey food stall'],
+		level: 5,
+        xp: 16,
+        stunTime: 0,
+        respawnTime : 7,
+		petChance: 47_718
+	},
+	{
+		name: 'Monkey General Stall',
+        aliases: ['monkey general stall'],
+		level: 5,
+        xp: 16,
+        stunTime: 0,
+        respawnTime : 7,
+		petChance: 47_718
+	},
+	{
+		name: 'Tea Stall',
+		aliases: ['tea stall'],
+		level: 5,
+        xp: 16,
+        stunTime: 0,
+        respawnTime : 7,
+		petChance: 47_718
+	},
+	{
+		name: 'Silk Stall',
+		aliases: ['silk stall'],
+		level: 20,
+        xp: 24,
+        stunTime: 0,
+        respawnTime : 5,
+		petChance: 68_926
+	},
+	{
+		name: `Wine Stall`,
+		aliases: ['wine stall'],
+		level: 22,
+        xp: 27,
+        stunTime: 0,
+        respawnTime : 10,
+		petChance: 36_490
+	},
+	{
+		name: 'Fruit Stall',
+		aliases: ['fruit stall'],
+		level: 25,
+        xp: 28.2,
+        stunTime: 0,
+        respawnTime : 2,
+		petChance: 124_066
+	},
+	{
+		name: 'Seed Stall',
+		aliases: ['seed stall'],
+		level: 27,
+        xp: 10,
+        stunTime: 0,
+        respawnTime : 9,
+		petChance: 36_490
+	},
+	{
+		name: 'Fur Stall',
+		aliases: ['fur stall'],
+		level: 35,
+        xp: 36,
+        stunTime: 0,
+        respawnTime : 10,
+		petChance: 36_490
+    },
+    {
+		name: 'Fish Stall',
+		aliases: ['fish stall'],
+		level: 42,
+        xp: 42,
+        stunTime: 0,
+        respawnTime : 10,
+		petChance: 36_490
+    },
+    {
+		name: 'Crossbow Stall',
+		aliases: ['crossbow stall'],
+		level: 49,
+        xp: 52,
+        stunTime: 0,
+        respawnTime : 9,
+		petChance: 36_490
+	},
+	{
+		name: 'Silver Stall',
+		aliases: ['silver stall'],
+		level: 50,
+        xp: 54,
+        stunTime: 0,
+        respawnTime : 30,
+		petChance: 36_490
+	},
+	{
+		name: 'Spice Stall',
+        aliases: ['spice stall'],
+		level: 65,
+        xp: 81,
+        stunTime: 0,
+        respawnTime : 80,
+		petChance: 36_490
+	},
+	{
+		name: 'Magic Stall',
+        aliases: ['magic stall'],
+		level: 65,
+        xp: 100,
+        stunTime: 0,
+        respawnTime : 80,
+		petChance: 36_490
+	},
+	{
+		name: 'Scimitar Stall',
+		aliases: ['scimitar stall'],
+		level: 65,
+        xp: 160,
+        stunTime: 0,
+        respawnTime : 80,
+		petChance: 36_490
+	},
+	{
+		name: 'Gem Stall',
+		aliases: ['gem stall'],
+		level: 75,
+        xp: 160,
+        stunTime: 0,
+        respawnTime : 180,
+		petChance: 36_490
+	},
+	{
+		name: `Ore Stall`,
+		aliases: ['ore stall'],
+		level: 82,
+        xp: 180,
+        stunTime: 0,
+        respawnTime : 60,
+		petChance: 36_490
 	}
 ];
 
